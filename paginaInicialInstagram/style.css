@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+    min-width: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+    margin: 22px auto 12px;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.formulario{
+    margin: 24px 0 10px ;
+
+}
+
+.user{
+    border-radius: 3px;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    align-items: center;
+}
+
+.password{
+    margin-top: 8px;
+    border-radius: 3px;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+}
+
+input, textarea {
+    color: #262626;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+input{
+
+    width: 268px;
+    height: 36px;
+    background: #fafafa;
+    border: 0;
+    text-rendering: auto;
+}
+
+.linhas {
+    margin: 10px 40px 18px;     
+}
+
+.linha {
+    width: 268px;
+    height: 1px;
+    position: relative;
+    top: .45em;
+}
+
+
+div.palavra_ou span{
+    background-color: white;
+    position: relative;
+    top: -0.5em;
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+div.palavra_ou{
+    height: 1px;
+    background-color: #333;
+    background: #DBDBDB;
+    text-align: center;
+}
+
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-entrar {
+    width: 268px;
+    height: 30px;
+    margin: 8px 40px;
+    background-color: #02e6f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.instagram-login {
+    margin-top: 3px;
+    background-color: #0295f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.intagram-logout {
+    color: #0295f6;
+    margin-top: 1rem;    
+}
+
+
+.instagram-esqueceuSenha{
+    color: rgba(var(--fe0,0,55,107),1);
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center; 
+}
+
+.not-account{
+    color: rgb(160, 160, 160)
+}
+.link-blue {
+    color: #0295f6;
+}
+
+.group_semConta{
+    margin-top: 8px;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.douwnload {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/googlepla-button.png');
+}
+
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+}
